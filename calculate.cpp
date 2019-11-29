@@ -10,6 +10,10 @@ double readNumber(int x){
     return num;
 }
 
+double add(int x, int y){
+    return x+y;
+}
+
 void menu(){
     char ch;
     double x,y;
@@ -17,9 +21,15 @@ void menu(){
     do{
         cout<<"\nMenu\n\n"
             endl<<"0. Exit"<<
+                <<"1. Add"
             endl<<"\nEnter your choice: ";
             cin>>ch;
         switch(ch){
+            case '1':
+                x = readNumber(1);
+                y = readNumber(2);
+                cout<<x<<" + "<<y<<" = "<<add(x,y);
+                break;
             case '0':
                 return;
             default:

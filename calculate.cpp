@@ -10,7 +10,7 @@ double readNumber(int x){
     return num;
 }
 
-double add(int x, int y){
+double add(double x, double y){
     return x+y;
 }
 

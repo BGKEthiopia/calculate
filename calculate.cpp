@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+// Version 1.0
+
 double readNumber(int x){
     double num;
     cout<<"Enter number "<<x<<": ";

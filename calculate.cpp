@@ -1,19 +1,7 @@
 #include<iostream>
 using namespace std;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-// Version 2.1
-=======
-// Version 3.0
->>>>>>> release-3.0
-=======
-// Version 4.0
->>>>>>> release-4.0
-=======
-// Version 5.0
->>>>>>> release-5.0
+// Version 5.1
 
 double readNumber(int x){
     double num;

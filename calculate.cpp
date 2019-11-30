@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-// Version 4.0
+// Version 5.0
 
 double readNumber(int x){
     double num;

@@ -2,10 +2,14 @@
 using namespace std;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Version 2.1
 =======
 // Version 3.0
 >>>>>>> release-3.0
+=======
+// Version 4.0
+>>>>>>> release-4.0
 
 double readNumber(int x){
     double num;
@@ -22,6 +26,10 @@ double diff(double x, double y){
     return x-y;
 }
 
+double mult(double x, double y){
+    return x*y;
+}
+
 void menu(){
     char ch;
     double x,y;
@@ -31,6 +39,7 @@ void menu(){
             endl<<"0. Exit"<<
                 <<"1. Add"
                 <<"2. Difference"
+                <<"3. Multipli"
             endl<<"\nEnter your choice: ";
             cin>>ch;
         switch(ch){
@@ -43,6 +52,11 @@ void menu(){
                 x = readNumber(1);
                 y = readNumber(2);
                 cout<<x<<" - "<<y<<" = "<<diff(x,y);
+                break;
+            case '3':
+                x = readNumber(1);
+                y = readNumber(2);
+                cout<<x<<" * "<<y<<" = "<<mult(x,y);
                 break;
             case '0':
                 return;

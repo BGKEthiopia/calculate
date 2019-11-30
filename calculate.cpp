@@ -22,6 +22,13 @@ double mult(double x, double y){
     return x*y;
 }
 
+double div(double x, double y){
+    if(y==0){
+        cout<<"NaN";
+    }
+    return x/y;
+}
+
 void menu(){
     char ch;
     double x,y;
@@ -32,6 +39,7 @@ void menu(){
                 <<"1. Add"
                 <<"2. Difference"
                 <<"3. Multipli"
+                <<"4. Divide"
             endl<<"\nEnter your choice: ";
             cin>>ch;
         switch(ch){
@@ -49,6 +57,11 @@ void menu(){
                 x = readNumber(1);
                 y = readNumber(2);
                 cout<<x<<" * "<<y<<" = "<<mult(x,y);
+                break;
+            case '4':
+                x = readNumber(1);
+                y = readNumber(2);
+                cout<<x<<" + "<<y<<" = "<<add(x,y);
                 break;
             case '0':
                 return;
